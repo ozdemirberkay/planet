@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		F003A66B2B84E65100C12224 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F003A66A2B84E65100C12224 /* RealityKitContent */; };
 		F003A66D2B84E65100C12224 /* PlanetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003A66C2B84E65100C12224 /* PlanetApp.swift */; };
-		F003A66F2B84E65100C12224 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003A66E2B84E65100C12224 /* ContentView.swift */; };
 		F003A6712B84E65200C12224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F003A6702B84E65200C12224 /* Assets.xcassets */; };
 		F003A6742B84E65200C12224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F003A6732B84E65200C12224 /* Preview Assets.xcassets */; };
+		F003A67D2B84E67000C12224 /* PlanetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003A67C2B84E67000C12224 /* PlanetListView.swift */; };
+		F003A6802B84E6CC00C12224 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003A67F2B84E6CC00C12224 /* DetailView.swift */; };
+		F003A6842B84E77E00C12224 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003A6832B84E77E00C12224 /* Planet.swift */; };
+		F003A6892B853C8500C12224 /* SpaceArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003A6882B853C8500C12224 /* SpaceArea.swift */; };
+		F003A68B2B853C9700C12224 /* PlanetArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F003A68A2B853C9700C12224 /* PlanetArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F003A6652B84E65100C12224 /* Planet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F003A6692B84E65100C12224 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F003A66C2B84E65100C12224 /* PlanetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetApp.swift; sourceTree = "<group>"; };
-		F003A66E2B84E65100C12224 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F003A6702B84E65200C12224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F003A6732B84E65200C12224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F003A6752B84E65200C12224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F003A67C2B84E67000C12224 /* PlanetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListView.swift; sourceTree = "<group>"; };
+		F003A67F2B84E6CC00C12224 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F003A6832B84E77E00C12224 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		F003A6882B853C8500C12224 /* SpaceArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceArea.swift; sourceTree = "<group>"; };
+		F003A68A2B853C9700C12224 /* PlanetArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		F003A6672B84E65100C12224 /* Planet */ = {
 			isa = PBXGroup;
 			children = (
+				F003A6872B853C6D00C12224 /* RealityView */,
+				F003A6822B84E77200C12224 /* Models */,
+				F003A6812B84E76400C12224 /* Screens */,
 				F003A66C2B84E65100C12224 /* PlanetApp.swift */,
-				F003A66E2B84E65100C12224 /* ContentView.swift */,
 				F003A6702B84E65200C12224 /* Assets.xcassets */,
 				F003A6752B84E65200C12224 /* Info.plist */,
 				F003A6722B84E65200C12224 /* Preview Content */,
@@ -79,6 +89,48 @@
 				F003A6732B84E65200C12224 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F003A67B2B84E65A00C12224 /* PlanetList */ = {
+			isa = PBXGroup;
+			children = (
+				F003A67C2B84E67000C12224 /* PlanetListView.swift */,
+			);
+			path = PlanetList;
+			sourceTree = "<group>";
+		};
+		F003A67E2B84E6BA00C12224 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F003A67F2B84E6CC00C12224 /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F003A6812B84E76400C12224 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F003A67B2B84E65A00C12224 /* PlanetList */,
+				F003A67E2B84E6BA00C12224 /* Detail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F003A6822B84E77200C12224 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F003A6832B84E77E00C12224 /* Planet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F003A6872B853C6D00C12224 /* RealityView */ = {
+			isa = PBXGroup;
+			children = (
+				F003A6882B853C8500C12224 /* SpaceArea.swift */,
+				F003A68A2B853C9700C12224 /* PlanetArea.swift */,
+			);
+			path = RealityView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F003A66F2B84E65100C12224 /* ContentView.swift in Sources */,
+				F003A68B2B853C9700C12224 /* PlanetArea.swift in Sources */,
+				F003A6802B84E6CC00C12224 /* DetailView.swift in Sources */,
+				F003A6892B853C8500C12224 /* SpaceArea.swift in Sources */,
 				F003A66D2B84E65100C12224 /* PlanetApp.swift in Sources */,
+				F003A67D2B84E67000C12224 /* PlanetListView.swift in Sources */,
+				F003A6842B84E77E00C12224 /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

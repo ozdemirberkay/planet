@@ -11,7 +11,17 @@ import SwiftUI
 struct PlanetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlanetListView()
+        }
+        
+        WindowGroup(id: planetVolumeAreaId, for: String.self) { $entityName in
+            SpaceArea(entityName: entityName!)
+            }
+            .windowStyle(.volumetric)
+        
+        ImmersiveSpace(id: fullPlanetAreaId){
+            PlanetArea()
+            }
+            .immersionStyle(selection: .constant(.full), in: .full)
         }
     }
-}
